@@ -6,9 +6,9 @@ public class HomeWork1 {
         Author gogol = new Author("Николай", "Гоголь");
         Book stranger = new Book("Незнакомка", blok, 1906);
         Book viy = new Book("Вий", gogol, 1833);
-        System.out.println("\"" + stranger.getTitle() + "\"" + " " + blok.getName() + " " + blok.getSurname() + " " + stranger.getPublishingYear());
-        System.out.println("\"" + viy.getTitle() + "\"" + " " + gogol.getName() + " " + gogol.getSurname() + " " + viy.getPublishingYear());
+        System.out.println("\"" + stranger.getTitle() + "\"" + " " + stranger.getAuthor().getName() + " " + stranger.getAuthor().getSurname() + " " + stranger.getPublishingYear());
+        System.out.println("\"" + viy.getTitle() + "\"" + " " + viy.getAuthor().getName() + " " + viy.getAuthor().getSurname() + " " + viy.getPublishingYear());
         viy.setPublishingYear(1900);
-        System.out.println("\"" + viy.getTitle() + "\"" + " " + gogol.getName() + " " + gogol.getSurname() + " " + viy.getPublishingYear());
+        System.out.println("\"" + viy.getTitle() + "\"" + " " + viy.getAuthor().getName() + " " + viy.getAuthor().getSurname() + " " + viy.getPublishingYear());
     }
 }
